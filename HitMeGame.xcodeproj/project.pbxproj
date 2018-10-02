@@ -12,6 +12,8 @@
 		46878DDC2160EC9A006386B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46878DDA2160EC9A006386B9 /* Main.storyboard */; };
 		46878DDE2160EC9E006386B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46878DDD2160EC9E006386B9 /* Assets.xcassets */; };
 		46878DE12160EC9E006386B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46878DDF2160EC9E006386B9 /* LaunchScreen.storyboard */; };
+		469FF42C2163CEB60086AA74 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469FF42B2163CEB60086AA74 /* AboutViewController.swift */; };
+		469FF42E2163D12D0086AA74 /* AboutAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469FF42D2163D12D0086AA74 /* AboutAuthorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		46878DDD2160EC9E006386B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46878DE02160EC9E006386B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46878DE22160EC9E006386B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		469FF42B2163CEB60086AA74 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		469FF42D2163D12D0086AA74 /* AboutAuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAuthorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				46878DDD2160EC9E006386B9 /* Assets.xcassets */,
 				46878DDF2160EC9E006386B9 /* LaunchScreen.storyboard */,
 				46878DE22160EC9E006386B9 /* Info.plist */,
+				469FF42B2163CEB60086AA74 /* AboutViewController.swift */,
+				469FF42D2163D12D0086AA74 /* AboutAuthorViewController.swift */,
 			);
 			path = HitMeGame;
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469FF42C2163CEB60086AA74 /* AboutViewController.swift in Sources */,
 				46878DD92160EC9A006386B9 /* ViewController.swift in Sources */,
 				46878DD72160EC9A006386B9 /* AppDelegate.swift in Sources */,
+				469FF42E2163D12D0086AA74 /* AboutAuthorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

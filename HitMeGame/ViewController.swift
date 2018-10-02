@@ -27,7 +27,25 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let roundedValue = slider.value.rounded()
         currentValue = Int(roundedValue)
-        startNewRound()
+       startNewGame()
+        
+        let thumbsImageNormal = UIImage(named: "SliderThumb-Normal")
+        slider.setThumbImage(thumbsImageNormal, for: .normal)
+    
+        
+        let thumbsImageHighlighted = UIImage(named: "SliderThumb-Highlighted")
+        slider.setThumbImage(thumbsImageHighlighted, for: .highlighted)
+        
+        let insests = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        
+        let trackLeftImage = UIImage(named: "SliderTrackLeft")
+        let trackLeftImageResizeable = trackLeftImage?.resizableImage(withCapInsets: insests)
+        slider.setMinimumTrackImage(trackLeftImageResizeable, for: .normal)
+        
+        
+        let trackRightImage = UIImage(named: "SliderTrackRight")
+        let trackRightImageResizeable = trackRightImage?.resizableImage(withCapInsets: insests)
+        slider.setMaximumTrackImage(trackRightImageResizeable, for: .normal)
         
     }
 
@@ -71,6 +89,13 @@ class ViewController: UIViewController {
         startNewRound()
     }
     
+    
+    @IBAction func startNewGame(){
+        roundNumber = 0
+        score = 0
+        startNewRound()
+    
+    }
     
     @IBAction func sliderMove(_ slider: UISlider){
         let roundedValue = slider.value.rounded()
